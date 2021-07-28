@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:action="@{/questionform}" th:object="${favoritecolor}" method="post">
+    What is your Name? <input type="text" th:field="*{name}" ><br>
+    What is your Quest? <input type="text" th:field="*{quest}" ><br>
+    <span th:text="${randquestion}"></span>
+    <input type="text" name=""><br>
+    <input type="submit" value="Answer" >
+</form>
+<img src="https://static2.gamerantimages.com/wordpress/wp-content/uploads/2021/06/Knight-Weapons-Chivalry-2.jpg"
+     alt="knight" width="500">
+
+
+</body>
+</html>
